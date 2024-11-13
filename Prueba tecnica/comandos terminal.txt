@@ -1,0 +1,97 @@
+Ejecutar paso en terminal:
+
+//Ejecutar las migraciones para crear las tablas de Passport:
+
+php artisan migrate
+
+
+
+//Instalar las claves de encriptación de Passport:
+
+php artisan passport:install
+
+
+
+//Iniciar el servidor de desarrollo para probar:
+
+php artisan serve
+
+
+
+
+
+
+
+Crear el Formulario en ReactJS para Cargar Archivos Excel:
+
+
+//Ejecuta el siguiente comando:
+
+npx create-react-app carga-excel
+
+
+
+
+//Esto creará un proyecto React básico.
+//Navegar al Directorio del Proyecto: Una vez creado el proyecto, navega al directorio:
+
+cd carga-excel
+
+
+
+
+//Instalar Dependencias Necesarias: Necesitarás instalar algunas dependencias adicionales para manejar el archivo Excel y la funcionalidad de drag & drop.
+//Ejecuta el siguiente comando para instalar estas dependencias:
+
+npm install react-dropzone xlsx axios
+
+
+
+//Iniciar el Servidor de React:
+
+npm start
+
+
+
+
+//Crear el Controlador ExcelUploadController:
+//Ejecuta el siguiente comando para generar el controlador:
+
+php artisan make:controller ExcelUploadController
+
+
+
+
+//Implementar el Control de Acceso por Roles
+// Crear la Migración para la Tabla roles y la Relación en users
+
+php artisan make:migration create_roles_table --create=roles
+
+
+
+//Ejecutar la Migración
+
+php artisan migrate
+
+
+
+//Agregar Roles Iniciales en el Seeder
+
+php artisan make:seeder RolesSeeder
+
+
+//Ejecuta el seeder:
+php artisan db:seed --class=RolesSeeder
+
+
+
+//Crear el Middleware
+php artisan make:middleware CheckAdmin
+
+
+//Crear el Middleware
+php artisan make:middleware CheckConsulta
+
+
+
+
